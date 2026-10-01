@@ -5,64 +5,73 @@
     <title>My First Website</title>
 
     <style>
-       body {
-    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+        body {
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-h1 {
-    color: darkblue;
-}
+        h1 {
+            color: darkblue;
+        }
 
-p {
-    font-size: 18px;
-}
+        p {
+            font-size: 18px;
+        }
 
-.card {
-    background-color: white;
-    width: 80%;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+        .card {
+            background-color: white;
+            width: 80%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
 <body>
-    <h1>Hello! 👋</h1>
 
-    <img src="IMG_20250822_232830_644.jpg" alt="My photo">
-    
- <p>Welcome to my first website.</p>
+    <div class="card">
 
-    <p>I am learning web development! 🚀</p>
+        <h1>Hello! 👋</h1>
 
-    <p>I built this website using my phone!</p>
+        <img src="IMG_20250822_232830_644.jpg" alt="My photo">
 
-    <body/>
-    
-    <button>Click Me! 🚀</button>
-        
-    <style>
-    button {
-    background-color: darkblue;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;</style>
+        <p>Welcome to my first website.</p>
 
-        <style>button:hover {
-    background-color: black;
-    transform: scale(1.05);
+        <p>I am learning web development! 🚀</p>
 
-    img {
-    width: 200px;
-    border-radius: 20px;
-    margin: 20px;
-    }
-}</style>
+        <p>I built this website using my phone!</p>
+
+        <button>Click Me! 🚀</button>
+
+    </div>
+
+</body>
+
+</html>
