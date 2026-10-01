@@ -62,29 +62,67 @@ nav a {
             background-color: black;
             transform: scale(1.05);
         }
+        .contact-box {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+}
 
-        #contactForm {
-    display: none;
-        }
+.contact-box h2 {
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contact-box textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-box button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+        
     </style>
 </head>
     
-    <body>
+    <body> 
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <button onclick="showContactForm()">Contact Me 📬</button>
-        <form id="contactForm">
-    <input type="text" placeholder="Your Name">
+        <div class="contact-box">
+    <h2>📬 Get In Touch</h2>
 
-    <input type="email" placeholder="Your Email">
+    <p>
+        Want to say hello? Send me a message! 😸
+    </p>
 
-    <textarea placeholder="Your Message"></textarea>
+    <form>
+        <input type="text" placeholder="Your Name">
 
-    <button type="submit">Send Message 🚀</button>
-        </form>
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message 🚀</button>
+    </form>
+    
     </nav>
 
     <div class="card">
@@ -104,11 +142,7 @@ nav a {
         </button>
 
     </div>
-        <script>
-function showContactForm() {
-    document.getElementById("contactForm").style.display = "block";
-}
-        </script>
+        
 
 </body>
 
