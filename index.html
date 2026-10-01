@@ -62,6 +62,10 @@ nav a {
             background-color: black;
             transform: scale(1.05);
         }
+
+        #contactForm {
+    display: none;
+        }
     </style>
 </head>
     
@@ -71,7 +75,8 @@ nav a {
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-        <form>
+        <button onclick="showContactForm()">Contact Me 📬</button>
+        <form id="contactForm">
     <input type="text" placeholder="Your Name">
 
     <input type="email" placeholder="Your Email">
@@ -99,6 +104,11 @@ nav a {
         </button>
 
     </div>
+        <script>
+function showContactForm() {
+    document.getElementById("contactForm").style.display = "block";
+}
+        </script>
 
 </body>
 
